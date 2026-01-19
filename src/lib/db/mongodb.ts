@@ -1,7 +1,7 @@
 import { MongoClient, Db, ObjectId } from "mongodb";
 
-const uri = "mongodb+srv://jameschen0831_db_user:james@bog.oxwyzuz.mongodb.net/?appName=BOG";
-const dbName = "crisis_corner";
+const uri = process.env.MONGODB_URI || "";
+const dbName = process.env.MONGODB_DB_NAME || "crisis_corner";
 
 let client: MongoClient | null = null;
 let db: Db | null = null;

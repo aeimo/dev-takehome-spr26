@@ -32,7 +32,13 @@
 ## Backend Implementation
 
 ### Database Setup
-MongoDB database "crisis_corner" with "requests" collection connected using provided credentials.
+MongoDB database "crisis_corner" with "requests" collection.
+
+Environment variables (in .env.local):
+- MONGODB_URI: Your MongoDB connection string
+- MONGODB_DB_NAME: Database name (default: crisis_corner)
+
+Note: .env.local is gitignored for security. See .env.example for template.
 
 ### API Endpoints
 
